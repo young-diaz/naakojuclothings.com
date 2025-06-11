@@ -1,0 +1,352 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    color: #FFF;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-brand img {
+    height: 50px;
+    width: auto;
+}
+
+.brand-name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Main Content Styles */
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+.hero-text {
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 90px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-text span {
+    color: rgb(230,104,59);
+    font-weight: bolder;
+}
+
+/* Collection Page Styles */
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 1rem;
+}
+
+.collection-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.collection-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Services Page Styles */
+.services-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services-list li {
+    background: #f8f8f8;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    border-left: 4px solid #007BFF;
+}
+
+.location-info {
+    margin: 2rem 0;
+    text-align: center;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+.location-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.location-link:hover {
+    background-color: #007BFF;
+    transform: translateY(-2px);
+}
+
+/* Contact Page Styles */
+.contact-section {
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #007BFF;
+}
+
+.whatsapp {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #25D366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f7f7f7;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .hamburger {
+        display: block;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.3s ease;
+        z-index: 999;
+        padding-top: 80px;
+    }
+    
+    nav.active {
+        right: 0;
+    }
+    
+    nav a {
+        margin: 15px 0;
+        font-size: 1.2rem;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+@media (min-width: 480px) {
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .hero-text {
+        text-align: left;
+        max-width: 450px;
+    }
+    
+    .collection-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .collection-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        padding: 3rem 1rem;
+    }
+}
